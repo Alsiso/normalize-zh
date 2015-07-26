@@ -1,0 +1,421 @@
+/*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
+
+/**
+ * @file:      normalize-zh.css v3.0.3
+ * @author:    alsiso
+ * @update:    2015年7月24日 08:25:13;
+ * @copyright: 基于 normalize.css 源码解读与注释翻译 | MIT License     
+*/
+
+
+/**
+ * 1. 设置所有的字体为'sans-serif'
+ * 2. 防止 iOS 横屏字号放大，同时保证在PC上 zoom 功能正常
+ */
+
+html {
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/**
+ * 修复默认边距，统一各浏览器效果
+ */
+
+body {
+  margin: 0;
+}
+
+/* HTML5 显示属性定义
+   ========================================================================== */
+/**
+ * 修复IE 8/9，HTML5新元素不能正确显示的问题，定义为 block的元素
+ * 修复IE 10/11，'details' or 'summary' 定义为 block 的元素
+ * 修复IE 11，'main'定义为 block 的元素
+ */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. 修复IE 8/9，HTML5新元素不能正确显示的问题，定义为inline-block元素
+ * 2. 修复Chrome, Firefox, 和Opera的'progress'元素没有以baseline垂直对齐
+ */
+
+audio,
+canvas,
+progress,
+video {
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
+}
+
+/**
+ * 对不支持'controls'属性的浏览器，'audio'元素给以隐藏
+ * 移除iOS5设备中多余的高度
+ */
+
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * 修复 IE 7/8/9，Firefox 3 和 Safari 4 中 「hidden」属性不起作用的问题
+ * 在IE、Safari、Firefox 22- 中隐藏「template」元素
+ */
+
+[hidden],
+template {
+  display: none;
+}
+
+/* 链接
+   ========================================================================== */
+
+/**
+ * 去掉 IE 10+ 点击链接时的灰色背景
+ */
+
+a {
+  background-color: transparent;
+}
+
+/**
+ * 去掉点击时的焦点框，同时保证使用键盘可以显示焦点框
+ */
+
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* 语义化文字标签修复
+   ========================================================================== */
+
+/**
+ * 修正「abbr」元素在 Firefox 外其他浏览器没有下划线的问题
+ */
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Firefox3+，Safari4/5 和 Chrome 中统一设置为粗体
+ */
+
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * 修正 Safari5 和 Chrome 中没有样式的问题
+ */
+
+dfn {
+  font-style: italic;
+}
+
+/**
+ * 对 h1 样式进行重置
+ */
+
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * 修正 IE6-11 中没有样式的问题
+ */
+
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * 统一 small 的字体大小
+ */
+
+small {
+  font-size: 80%;
+}
+
+/**
+ * 防止所有浏览器中的<sub>和<sup>影响行高
+ */
+
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* 嵌入元素
+   ========================================================================== */
+
+/**
+ * 去除 IE6-9 和 Firefox 3 中 a 内部 img 元素默认的边框
+ */
+
+img {
+  border: 0;
+}
+
+/**
+ * 修复 IE9 中的「overflow」的怪异表现
+ */
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* 内容分组
+   ========================================================================== */
+
+/**
+ * 修复 IE 8/9、Safari中margin失效
+ */
+
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * 修正 Firefox 和其他浏览器之间的差异
+ */
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * 标签应当包含滚溢出
+ */
+
+pre {
+  overflow: auto;
+}
+
+/**
+ * 统一代码的字体设置
+ */
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* 表单
+   ========================================================================== */
+
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+
+/**
+ * 1. 修正所有浏览器中颜色不继承的问题
+ * 2. 修正所有浏览器中字体不继承的问题
+ * 3. 修正 Firefox 3+， Safari5 和 Chrome 中外边距不同的问题
+ */
+
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
+}
+
+/**
+ * 修正 IE7 随着字数增加边距不断增加的问题
+ */
+
+button {
+  overflow: visible;
+}
+
+/**
+ * 统一各浏览器「text-transform」不会继承的问题
+ */
+
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. 避免 Android 4.0.* 中的 WebKit bug ，该bug会破坏原生的
+   「audio」 和「video」的控制器
+ * 2. 更正 iOS 中无法设置可点击的「input」的问题
+ * 3. 统一其他类型的「input」的光标样式
+ */
+
+button,
+html input[type="button"], /* 1 */
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
+}
+
+/**
+ * 重置按钮禁用时光标样式
+ */
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * 移除 Firefox 4+ 的内边距
+ */
+
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. 修正 IE 8/9 box-sizing 被设置为「content-box」的问题
+ * 2. 移除 IE 8/9 中多余的内边距
+ */
+
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * 修正 Chrome 中 input [type="number"] 在特定高度和 font-size 时,
+ * 下面一个箭头光标变成「cursor: text」
+ */
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. 修正 Safari 5 和 Chrome 中「appearance」被设置为「searchfield」的问题
+ * 2. 修正 Safari 5 和 Chrome 中「box-sizing」被设置为 「border-box」的问题
+ */
+
+input[type="search"] {
+  -webkit-appearance: textfield; /* 1 */
+  box-sizing: content-box; /* 2 */
+}
+
+/**
+ * 1.移除 OS X 中 Safari5 和 Chrome 搜索框内侧的左边距
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * 定义一致的边框、外边距和内边距
+ */
+
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. 修正 IE 6-9 中颜色不能继承的问题
+ * 2. 重置内边距
+ */
+
+legend {
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
+}
+
+/**
+ * 1. 移除 IE6-11 中默认的垂直滚动条
+ */
+
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+
+/**
+ * 合并单元格边框，重置内边距
+ */
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
