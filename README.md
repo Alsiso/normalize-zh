@@ -1,14 +1,16 @@
 ## 前言
 Normalize-zh.css是根据对Normalize.css的源码分析后，经过学习与整理，将源代码中的英文注释文档翻译为中文版本，方便国内的开发者学习和使用，我深知此版本一定有很多不足，希望能得到大家的理解和支持，同样也很愿意和大家一起完善。
 
-关于源码的解读细节，可以查看文档下方，可以阅读我发布在www.segmentfault.com(www.segmentfault.com) 的系列文章
-关于CSS Reset 那些事（二）之 Normalize.css 源码解读(http://segmentfault.com/a/1190000003025718)
+关于源码的解读细节，可以查看文档下方，可以阅读我发布在segmentfault上的系列文章
+
+* [关于CSS Reset 那些事（二）之 Normalize.css 源码解读](http://segmentfault.com/a/1190000003025718)
+* [关于CSS Reset 那些事（三）之 Normalize-zh.css 出炉](http://segmentfault.com/a/1190000003028985)
 
 
 ## Normalize 源码解读
 
-源码地址：[https://github.com/necolas/normalize.css/blob/master/normalize.css][21]
-源码版本：v3.0.3
+* 源码地址：[https://github.com/necolas/normalize.css/blob/master/normalize.css][21]
+* 源码版本：v3.0.3
 
 ### html与body 元素
 ```
