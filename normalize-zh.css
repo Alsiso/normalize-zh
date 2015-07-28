@@ -241,11 +241,6 @@ samp {
    ========================================================================== */
 
 /**
- * Known limitation: by default, Chrome and Safari on OS X allow very limited
- * styling of `select`, unless a `border` property is set.
- */
-
-/**
  * 1. 修正所有浏览器中颜色不继承的问题
  * 2. 修正所有浏览器中字体不继承的问题
  * 3. 修正 Firefox 3+， Safari5 和 Chrome 中外边距不同的问题
@@ -262,7 +257,7 @@ textarea {
 }
 
 /**
- * 修正 IE7 随着字数增加边距不断增加的问题
+ * 统一 IE 8/9/10/11 `overflow`属性为`visible`
  */
 
 button {
@@ -270,7 +265,7 @@ button {
 }
 
 /**
- * 统一各浏览器「text-transform」不会继承的问题
+ * 统一各浏览器`text-transform`不会继承的问题
  */
 
 button,
@@ -280,9 +275,9 @@ select {
 
 /**
  * 1. 避免 Android 4.0.* 中的 WebKit bug ，该bug会破坏原生的
-   「audio」 和「video」的控制器
- * 2. 更正 iOS 中无法设置可点击的「input」的问题
- * 3. 统一其他类型的「input」的光标样式
+   `audio`和`video`的控制器
+ * 2. 更正 iOS 中无法设置可点击的`input`的问题
+ * 3. 统一其他类型的`input`的光标样式
  */
 
 button,
@@ -313,8 +308,7 @@ input::-moz-focus-inner {
 }
 
 /**
- * Address Firefox 4+ setting `line-height` on `input` using `!important` in
- * the UA stylesheet.
+ * 统一设置`input`行高为`normal`
  */
 
 input {
@@ -322,8 +316,6 @@ input {
 }
 
 /**
- * It's recommended that you don't attempt to style these elements.
- * Firefox's implementation doesn't respect box-sizing, padding, or width.
  *
  * 1. 修正 IE 8/9 box-sizing 被设置为「content-box」的问题
  * 2. 移除 IE 8/9 中多余的内边距
@@ -336,8 +328,8 @@ input[type="radio"] {
 }
 
 /**
- * 修正 Chrome 中 input [type="number"] 在特定高度和 font-size 时,
- * 下面一个箭头光标变成「cursor: text」
+ * 修正 Chrome 中 input [type="number"] 在特定高度和`font-size`时,
+ * 下面一个箭头光标变成`cursor: text`
  */
 
 input[type="number"]::-webkit-inner-spin-button,
@@ -346,8 +338,8 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 /**
- * 1. 修正 Safari 5 和 Chrome 中「appearance」被设置为「searchfield」的问题
- * 2. 修正 Safari 5 和 Chrome 中「box-sizing」被设置为 「border-box」的问题
+ * 1. 修正 Safari 5 和 Chrome 中`appearance`被设置为`searchfield`的问题
+ * 2. 修正 Safari 5 和 Chrome 中`box-sizing`被设置为`border-box`的问题
  */
 
 input[type="search"] {
@@ -356,9 +348,7 @@ input[type="search"] {
 }
 
 /**
- * 1.移除 OS X 中 Safari5 和 Chrome 搜索框内侧的左边距
- * Safari (but not Chrome) clips the cancel button when the search input has
- * padding (and `textfield` appearance).
+ * 移除原生默认样式，统一search的输入框样式
  */
 
 input[type="search"]::-webkit-search-cancel-button,
@@ -395,15 +385,13 @@ textarea {
 }
 
 /**
- * Don't inherit the `font-weight` (applied by a rule above).
- * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ * 统一设置optgroup元素font-weight始终为bold
  */
-
 optgroup {
   font-weight: bold;
 }
 
-/* Tables
+/* 表格
    ========================================================================== */
 
 /**
