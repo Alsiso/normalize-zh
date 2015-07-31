@@ -628,6 +628,8 @@ th {
 
 ```
 
+* 合并单元格边框，重置内边距
+
 
 
   [1]: http://necolas.github.io/normalize.css/
